@@ -98,6 +98,7 @@ li.social-list img{
 }
 .main{
 	margin-top: 15px;
+	border-top: 3px solid #e43f3f; 
 }
 .main-left h6{
 	font-weight: bold;
@@ -128,6 +129,9 @@ li.social-list img{
 }
 .ladder-wrapper .decoration-bar{
 	background: #f4cb1e;
+}
+.main-right{
+	margin: 0 0 0 ; 
 }
 .match-header{
 	color: #fff;
