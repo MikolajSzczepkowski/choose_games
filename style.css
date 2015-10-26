@@ -11,22 +11,8 @@ body{
 	height: 80%;
 	margin: 2px;
 }
-.menu{
-	background: green;
-}
-.menu-wrapper{
-	background: red;
-}
 .menu-height{
 	height: 30px;
-}
-.target{
-	background: #e43f3f;
-}
-.user{
-}
-.chat{
-	background: #d8d8d8;
 }
 .login{
 	background: #363636;
@@ -41,26 +27,56 @@ body{
 	line-height: 2;
 }
 .friends{
-	height: 1000px;
-	background: grey;
+	background: #fff;
 	float: right;
+	padding: 20px 0 10px 0;
 }
 .friends-search-img{
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	margin-top: 10px; 
 	background: #d8d8d8;
 	display: inline-block;
 	list-style: none;
 }
+#userSearch{
+	font-style: italic;
+	font-weight: lighter;
+}
+.friends-header{
+	font-size: 12px;
+	font-style: italic;
+	margin: 10px 0 0 0;
+	border-bottom: 1px solid #d8d8d8; 
+}
+.friends-list{
+	margin: 5px 0 0 0;
+}
+.friends-list li{
+	font-size: 12px;
+	font-style: italic;
+	margin: 5px 0 0 0;
+	list-style-position: inside;
+	list-style-image: url(#);
+}
+.friends-list li:hover{
+	background: #d8d8d8;
+	color: #fff;
+}
+.friends-list li img{
+	width: 30px;
+}
+.friends-active img{
+	border: 2px solid #1182f5;
+	list-style-image: url(#);
+}
 .social{
 	height: 30px;
 	border-top: 3px solid #e43f3f;
 	border-bottom: 1px solid #d8d8d8;
-	margin-top: -80px;
+	margin-top: -78px;
 }
 .social-list-group{
-	background: red;
 	height: 27px;
 }
 .social-list{
@@ -81,11 +97,7 @@ li.social-list img{
  	margin: 2px 0 0 0;
 }
 .main{
-	background: blue;
 	margin-top: 15px;
-}
-.main-left{
-	background: green;
 }
 .main-left h6{
 	font-weight: bold;
@@ -100,17 +112,11 @@ li.social-list img{
 	padding: 3px;
 	border-bottom: 1px solid #d8d8d8; 
 }
-.tournament-wrapper{
-
-}
 .tournament-border{
 	border-left: 3px solid #e43f3f; 
 }
 .ladder-border{
 	border-left: 3px solid #f4cb1e; 
-}
-.ladder-wrapper{
-	background: pink;
 }
 .decoration-bar{
 	display: none;
@@ -123,18 +129,14 @@ li.social-list img{
 .ladder-wrapper .decoration-bar{
 	background: #f4cb1e;
 }
-.main-right{
-	
-}
 .match-header{
 	background: #363636;
 	color: #fff;
 	font-weight: bold;
 	font-style: italic;
 	padding: 15px 0;
-	margin: 0 0 0 -1px;
-}
-.match-wrapper{
+	margin: 0;
+	text-indent: 5px;
 }
 .match{
 	display: inline-block;
@@ -173,6 +175,9 @@ li.social-list img{
 	float: right;
 	width: 20px;
 	margin: 0 40px 0 0;
+}
+.match-show-more{
+	padding: 20px 0;
 }
 @media screen and (min-width: 480px){
 	
@@ -234,6 +239,9 @@ li.social-list img{
 	.social-list:nth-child(3){
 		margin-left: 0;
 	}
+	.friends{
+		padding: 0 0 10px 0;
+	}
 
 }
 @media screen and (min-width: 1280px){
@@ -241,7 +249,7 @@ li.social-list img{
 		font-size: 14px;
 	}
 	.match-info img{
-		margin: 0 15px 0 0;
+		margin: 0 17px 0 0;
 	}
 	.main-left h6{
 		font-size: 12px;
