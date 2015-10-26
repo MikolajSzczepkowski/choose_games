@@ -130,18 +130,27 @@ li.social-list img{
 	background: #f4cb1e;
 }
 .match-header{
-	background: #363636;
 	color: #fff;
 	font-weight: bold;
 	font-style: italic;
 	padding: 15px 0;
 	margin: 0;
-	text-indent: 5px;
+}
+.match-header-background{
+	background: #363636;
+	margin: 0 0 0 15px;
+}
+.match-wrapper{
+	background: #f4f4f4;
+	padding: 0;
+	margin: 0 0 0 15px;
+}
+.match-wrapper:hover{
+	background: #d8d8d8;
 }
 .match{
 	display: inline-block;
-	padding: 5px 0;
-	background: #f4f4f4;
+	padding: 5px 0;	
 }
 .match-team{
 	margin: 0 0 0 -15px;
@@ -167,24 +176,26 @@ li.social-list img{
 .match-info{
 	font-style: italic;
 	font-weight: lighter;
-	margin: 30px 0 5px 0;
+	margin: 30px 0 5px 15px;
 	border-bottom: 1px solid #d8d8d8;
 	padding: 0 0 5px 0; 
 }
 .match-info img{
 	float: right;
 	width: 20px;
-	margin: 0 40px 0 0;
+	margin: 0 28px 0 0;
 }
 .match-show-more{
 	padding: 20px 0;
 }
 @media screen and (min-width: 480px){
-	
+	.match-info img{
+		margin: 0 53px 0 0;
+	}
 }
 @media screen and (min-width: 640px){
 	.match-info img{
-		margin: 0 65px 0 0;
+		margin: 0 85px 0 0;
 	}
 	.social-list:nth-child(1){
 		margin-left: 40%;
@@ -201,7 +212,7 @@ li.social-list img{
 		display: inline-block;
 	}
 	.match-info img{	
-		margin: 0 85px 0 0;
+		margin: 0 105px 0 0;
 	}
 }
 @media screen and (min-width: 1024px){
@@ -209,7 +220,7 @@ li.social-list img{
 		font-size: 12px;
 	}
 	.match-info img{
-		margin: 0;
+		margin: 0 15px 0 0;
 	}
 	.main-left h6{
 		font-size: 10px;
@@ -249,7 +260,7 @@ li.social-list img{
 		font-size: 14px;
 	}
 	.match-info img{
-		margin: 0 17px 0 0;
+		margin: 0 25px 0 0;
 	}
 	.main-left h6{
 		font-size: 12px;
