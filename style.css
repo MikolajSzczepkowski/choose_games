@@ -1,5 +1,6 @@
 body{
 	font-family: 'Open Sans', sans-serif;
+	background: url(images/background.png) repeat;
 }
 .border-bottom{
 	box-shadow: 0 5px 0 #fff;
@@ -7,12 +8,18 @@ body{
 .margin-left{
 	margin-left: 15px;
 }
+#navigation{
+	background: #fff;
+}
 #navigation img{
 	height: 80%;
 	margin: 2px;
 }
 .menu-height{
 	height: 30px;
+}
+.pointer{
+	cursor: pointer;
 }
 .login{
 	background: #363636;
@@ -22,7 +29,7 @@ body{
 .login-text{
 	height: 30px;
 	background: #fff;
-	margin: 25px 0;
+	margin: 65px 0;
 	font-weight: bold;
 	line-height: 2;
 }
@@ -30,6 +37,9 @@ body{
 	background: #fff;
 	float: right;
 	padding: 20px 0 10px 0;
+	margin: 0 0 0 975px;
+	position: absolute;
+	z-index: 100;
 }
 .friends-search-img{
 	width: 30px;
@@ -58,6 +68,7 @@ body{
 	margin: 5px 0 0 0;
 	list-style-position: inside;
 	list-style-image: url(#);
+	cursor: pointer;
 }
 .friends-list li:hover{
 	background: #d8d8d8;
@@ -74,7 +85,6 @@ body{
 	height: 30px;
 	border-top: 3px solid #e43f3f;
 	border-bottom: 1px solid #d8d8d8;
-	margin-top: -78px;
 }
 .social-list-group{
 	height: 27px;
@@ -97,8 +107,11 @@ li.social-list img{
  	margin: 2px 0 0 0;
 }
 .main{
+	background: #fff;
 	margin-top: 15px;
-	border-top: 3px solid #e43f3f; 
+	border-top: 3px solid #e43f3f;
+	border-left: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
 }
 .main-left h6{
 	font-weight: bold;
@@ -130,9 +143,6 @@ li.social-list img{
 .ladder-wrapper .decoration-bar{
 	background: #f4cb1e;
 }
-.main-right{
-	margin: 0 0 0 ; 
-}
 .match-header{
 	color: #fff;
 	font-weight: bold;
@@ -148,6 +158,7 @@ li.social-list img{
 	background: #f4f4f4;
 	padding: 0;
 	margin: 0 0 0 15px;
+	cursor: pointer;
 }
 .match-wrapper:hover{
 	background: #d8d8d8;
@@ -235,6 +246,10 @@ li.social-list img{
 	}
 	.decoration-bar{
 		margin: 35px 0 0 15px;
+	}
+	.main-right{
+		position: absolute;
+		margin: 0 0 0 0;
 	}
 	.login-text{
 		margin: 60px 0 0 0;

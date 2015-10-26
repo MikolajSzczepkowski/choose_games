@@ -9,32 +9,32 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container-fluid">
+<div class="container">
 	<nav id="navigation" class="row">
-		<div class="col-md-1">
-			<div class="menu-wrapper border-bottom menu-height text-center">
+		<div class="col-md-1 col-md-offset-1">
+			<div id="menu" class=" border-bottom menu-height text-center pointer">
 				<img src="images/icon-menu.png" alt="menu">
 			</div>
 		</div>
 		<div class="col-md-1 col-md-offset-1">
-			<div class="target border-bottom menu-height text-center">
+			<div id="target" class="border-bottom menu-height text-center pointer">
 				<img src="images/target.png" alt="target">
 			</div>
 		</div>
-		<div class="col-md-1 col-md-offset-4">
-			<div class="user border-bottom menu-height text-center">
+		<div class="col-md-2 col-md-offset-3">
+			<div id="user" class="border-bottom menu-height text-center pointer">
 				<img src="images/user.png" alt="user">User 01
 			</div>
 		</div>
-		<div class="col-md-1 col-md-offset-2 chat border-bottom menu-height text-center">
+		<div id="chat" class="col-md-1 col-md-offset-1 border-bottom menu-height text-center pointer">
 			<img src="images/chat.png">
 		</div>
 	</nav>
 	<div class="row login">
 		<div class="col-md-2 col-md-offset-7">
-			<div class="login-text text-uppercase text-center">login/register</div>
+			<div class="login-text text-uppercase text-center pointer">login/register</div>
 		</div>
-		<div class="col-xs-12 col-md-2 col-md-offset-1 friends">
+		<div id="friends" class="col-xs-12 col-md-2 col-md-offset-1 friends">
 			<div class="col-xs-12 friends-search-wrapper">
 				<ul class="col-xs-12">
 					<li class="friends-search-img"></li>
@@ -62,28 +62,28 @@
 	</div>
 	<div class="row social">
 		<ul class="col-xs -12 col-md-2 col-md-offset-6 social-list-group">
-			<li class="col-md-2 social-list"><img src="images/youtube.png" alt="youtube"></li>
-			<li class="col-md-2 social-list"><img src="images/facebook.png" alt="facebook"></li>
-			<li class="col-md-2 social-list"><img src="images/twitter.png" alt="twitter"></li>
+			<li class="col-md-2 social-list"><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
+			<li class="col-md-2 social-list"><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+			<li class="col-md-2 social-list"><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
 		</ul>
 	</div>
 	<div class="row main">
-		<div class="col-xs-12 col-md-6 main-left">
+		<div class="col-xs-12 col-md-7 main-left">
 			<div class="row tournament-wrapper">
 				<div class="col-sm-1 decoration-bar"></div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 pointer">
 					<h6 class="text-uppercase"><img src="images/tournament.png" alt="tournament">tournament</h6>
 					<img src="images/battlefield.png" alt="battlefield" id="gameImage" class="tournament-border">
 					<p>Battlefield Hardline 2v2<br>
 					Opening Cup #1</p>
 				</div>
-				<div class="col-sm-3 col-sm-offset-1">
+				<div class="col-sm-3 col-sm-offset-1 pointer">
 					<h6 class="text-uppercase"><img src="images/tournament.png" alt="tournament">tournament</h6>
-					<img src="images/battlefield.png" alt="battlefield" id="gameImage" class="tournament-border">
-					<p>Battlefield Hardline 2v2<br>
+						<img src="images/battlefield.png" alt="battlefield" id="gameImage" class="tournament-border">
+				<p>Battlefield Hardline 2v2<br>
 					Opening Cup #1</p>
 				</div>
-				<div class="col-sm-3 col-sm-offset-1">
+				<div class="col-sm-3 col-sm-offset-1 pointer">
 					<h6 class="text-uppercase"><img src="images/tournament.png" alt="tournament">tournament</h6>
 					<img src="images/battlefield.png" alt="battlefield" id="gameImage" class="tournament-border">
 					<p>Battlefield Hardline 2v2<br>
@@ -92,19 +92,19 @@
 			</div>
 			<div class="row ladder-wrapper">
 				<div class="col-sm-1 decoration-bar"></div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 pointer">
 					<h6 class="text-uppercase"><img src="images/ladder.png" alt="ladder">ladder</h6>
 					<img src="images/battlefield.png" alt="battlefield" id="gameImage" class="ladder-border">
 					<p>Battlefield Hardline 2v2<br>
 					Opening Cup #1</p>
 				</div>
-				<div class="col-sm-3 col-sm-offset-1">
+				<div class="col-sm-3 col-sm-offset-1 pointer">
 					<h6 class="text-uppercase"><img src="images/ladder.png" alt="ladder">ladder</h6>
 					<img src="images/battlefield.png" alt="battlefield" id="gameImage" class="ladder-border">
 					<p>Battlefield Hardline 2v2<br>
 					Opening Cup #1</p>
 				</div>
-				<div class="col-sm-3 col-sm-offset-1">
+				<div class="col-sm-3 col-sm-offset-1 pointer">
 					<h6 class="text-uppercase"><img src="images/ladder.png" alt="ladder">ladder</h6>
 					<img src="images/battlefield.png" alt="battlefield" id="gameImage" class="ladder-border">
 					<p>Battlefield Hardline 2v2<br>
@@ -112,42 +112,44 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-3 main-right">
-			<div class="col-xs-12 match-header-background"><h6 class="match-header">Latest matches (21)</h6></div>
-			<div class="col-xs-12 match-wrapper">
-				<div class="col-xs-12 match">
-					<p class="col-xs-2 match-score match-winner">2</p>
-					<p class="col-xs-9 match-team match-winner"><img src="images/team.png" alt="team" class="match-winner">Team WAFEL</p>
+		<div class="col-xs-12 col-md-3 col-md-offset-1">
+			<div class="main-right">
+				<div class="col-xs-12 match-header-background"><h6 class="match-header">Latest matches (21)</h6></div>
+				<div class="col-xs-12 match-wrapper">
+					<div class="col-xs-12 match">
+						<p class="col-xs-2 match-score match-winner">2</p>
+						<p class="col-xs-9 match-team match-winner"><img src="images/team.png" alt="team" class="match-winner">Team WAFEL</p>
+					</div>
+					<div class="col-xs-12 match">
+						<p class="col-xs-9 match-team"><img src="images/team.png" alt="team">Casablanka</p>
+						<p class="col-xs-2 match-score">0</p>
+					</div>
 				</div>
-				<div class="col-xs-12 match">
-					<p class="col-xs-9 match-team"><img src="images/team.png" alt="team">Casablanka</p>
-					<p class="col-xs-2 match-score">0</p>
+				<p class="col-xs-12 match-info">23 Aug 2015 (Battlefield 4) 5v5<img src="images/cup.png" alt="cup"></p>
+				<div class="col-xs-12 match-wrapper">
+					<div class="col-xs-12 match">
+						<p class="col-xs-2 match-score match-winner">2</p>
+						<p class="col-xs-9 match-team match-winner"><img src="images/team.png" alt="team" class="match-winner">Team WAFEL</p>
+					</div>
+					<div class="col-xs-12 match">
+						<p class="col-xs-9 match-team"><img src="images/team.png" alt="team">Casablanka</p>
+						<p class="col-xs-2 match-score">0</p>
+					</div>
 				</div>
+				<p class="col-xs-12 match-info">23 Aug 2015 (Battlefield 4) 5v5<img src="images/cup.png" alt="cup"></p>
+				<div class="col-xs-12 match-wrapper">
+					<div class="col-xs-12 match">
+						<p class="col-xs-2 match-score match-winner">2</p>
+						<p class="col-xs-9 match-team match-winner"><img src="images/team.png" alt="team" class="match-winner">Team WAFEL</p>
+					</div>
+					<div class="col-xs-12 match">
+						<p class="col-xs-9 match-team"><img src="images/team.png" alt="team">Casablanka</p>
+						<p class="col-xs-2 match-score">0</p>
+					</div>
+				</div>
+				<p class="col-xs-12 match-info">23 Aug 2015 (Battlefield 4) 5v5<img src="images/cup.png" alt="cup"></p>
+				<div class="match-show-more text-uppercase text-center pointer">show more</div>
 			</div>
-			<p class="col-xs-12 match-info">23 Aug 2015 (Battlefield 4) 5v5<img src="images/cup.png" alt="cup"></p>
-			<div class="col-xs-12 match-wrapper">
-				<div class="col-xs-12 match">
-					<p class="col-xs-2 match-score match-winner">2</p>
-					<p class="col-xs-9 match-team match-winner"><img src="images/team.png" alt="team" class="match-winner">Team WAFEL</p>
-				</div>
-				<div class="col-xs-12 match">
-					<p class="col-xs-9 match-team"><img src="images/team.png" alt="team">Casablanka</p>
-					<p class="col-xs-2 match-score">0</p>
-				</div>
-			</div>
-			<p class="col-xs-12 match-info">23 Aug 2015 (Battlefield 4) 5v5<img src="images/cup.png" alt="cup"></p>
-			<div class="col-xs-12 match-wrapper">
-				<div class="col-xs-12 match">
-					<p class="col-xs-2 match-score match-winner">2</p>
-					<p class="col-xs-9 match-team match-winner"><img src="images/team.png" alt="team" class="match-winner">Team WAFEL</p>
-				</div>
-				<div class="col-xs-12 match">
-					<p class="col-xs-9 match-team"><img src="images/team.png" alt="team">Casablanka</p>
-					<p class="col-xs-2 match-score">0</p>
-				</div>
-			</div>
-			<p class="col-xs-12 match-info">23 Aug 2015 (Battlefield 4) 5v5<img src="images/cup.png" alt="cup"></p>
-			<div class="match-show-more text-uppercase text-center">show more</div>
 		</div>
 	</div>
 </div>
