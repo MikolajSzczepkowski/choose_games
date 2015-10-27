@@ -114,14 +114,22 @@ li.social-list img{
 	border-left: 1px solid #d8d8d8;
 	border-right: 1px solid #d8d8d8;
 }
-.main-down{
-}
 .main-left h6{
 	font-weight: bold;
 }
 .main-left h6 img{
 	width: 20px;
 	margin: 0 5px 0 3px;
+}
+.game-image{
+	width: 200px;
+}
+.game-image-hover{
+	width: 200px;
+	height: 201px;
+	position: absolute;
+	z-index: 10;
+	background: rgba(250, 250, 250, 0.9); 
 }
 .main-left p{
 	font-size: 12px;
@@ -236,6 +244,10 @@ li.social-list img{
 	.game-image{
 		width: 150px;
 	}
+	.game-image-hover{
+		width: 150px;
+		height: 151px;
+	}
 }
 @media screen and (min-width: 990px){
 	.friends{
@@ -243,9 +255,6 @@ li.social-list img{
 	}
 	.main-left h6 img{
 		width: 15px;
-	}
-	.game-image{
-		width: 150px;
 	}
 	.decoration-bar{
 		margin: 35px 0 0 15px;
@@ -298,6 +307,10 @@ li.social-list img{
 	}
 	.game-image{
 		width: 200px;
+	}
+	.game-image-hover{
+		width: 200px;
+		height: 201px;
 	}
 }
 @media screen and (min-width: 1280px){
