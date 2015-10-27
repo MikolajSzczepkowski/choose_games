@@ -261,6 +261,18 @@ li.social-list img{
 		width: 150px;
 		height: 151px;
 	}
+	.game-hover-players{
+		margin: 10px 0 0 0;
+		font-size: 10px;
+	}
+	.game-hover-info{
+		margin: 10px 0 0 0;
+		font-size: 12px;
+	}
+	.game-hover-fee{
+		margin: 10px 0 0 0;
+		font-size: 20px; 
+	}
 }
 @media screen and (min-width: 990px){
 	.friends{
@@ -338,6 +350,15 @@ li.social-list img{
 	.game-image-hover{
 		width: 200px;
 		height: 201px;
+	}
+	.game-hover-players{
+		margin: 20px 0 0 0;
+	}
+	.game-hover-info{
+		margin: 20px 0 0 0;
+	}
+	.game-hover-fee{
+		margin: 20px 0 0 0; 
 	}
 }
 @media screen and (min-width: 1280px){
