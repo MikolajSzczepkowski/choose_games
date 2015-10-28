@@ -13,21 +13,10 @@ $(function (){
 	});
 
 	$("#chat").on("click", function(){
-		width = $(window).width(),
-		friendsHeight = $("#friends").height() + 10 +"px";
-		if(width <= 990){
-			if(toggleCounter%2 === 0){
-				$(".main").animate({paddingTop: friendsHeight});
-			}
-			else{
-				$(".main").animate({paddingTop: "0px"});
-			}
-		}
 		$("#friends").toggle( "slide", { 
 			direction: "right", 
 			easing: "easeInOutBack" 
-		},800);
-		toggleCounter ++;
+		},700);
 	});
 
 	$(".game-image").on("mouseenter", function(){

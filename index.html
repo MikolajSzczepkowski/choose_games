@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 	<nav id="navigation" class="row">
 		<div class="col-md-1 col-md-offset-1">
 			<div id="menu" class=" border-bottom menu-height text-center pointer">
@@ -27,47 +27,51 @@
 				<img src="images/user.png" alt="user">User 01
 			</div>
 		</div>
-		<div id="chat" class="col-md-1 col-md-offset-1 border-bottom menu-height text-center pointer">
-			<img src="images/chat.png">
+		<div class="col-md-2 col-md-offset-1 border-bottom menu-height text-center pointer">
+			<img src="images/chat.png" alt="chat" id="chat">
 		</div>
 	</nav>
-	<div class="row login">
-		<div class="col-md-2 col-md-offset-7">
-			<div class="login-text text-uppercase text-center pointer">login/register</div>
-		</div>
-		<div id="friends" class="col-xs-12 col-md-2 col-md-offset-1 friends">
-			<div class="col-xs-12 friends-search-wrapper">
+	<div class="row">
+		<div id="friends" class="col-xs-12 col-md-2 col-md-push-9 friends">
+			<div class="col-xs-12 friends-search-wrapper text-center">
 				<ul class="col-xs-12">
 					<li class="friends-search-img"></li>
 					<li class="friends-search-img"></li>
 					<li class="friends-search-img"></li>
 				</ul>
 				<label class="col-xs-12" for="userSearch">
-					<input type="text" id="userSearch" class="col-xs-12" placeholder="Search users...">
+					<input type="text" id="userSearch" placeholder="Search users...">
 				</label>
 			</div>
 			<div class="col-xs-12 text-center friends-header">friends(34)</div>
-			<ul class="col-xs-12 friends-list">
-				<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
-				<li class="friends-active"><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
-				<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
-				<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
-				<li class="friends-active"><img src="images/team.png" alt="avatar"> Desperados_PL</li>
-				<li class="friends-active"><img src="images/team.png" alt="avatar"> Desperados_PL</li>
-				<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
-				<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
-				<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
-				<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
-			</ul>
+				<ul class="col-xs-12 friends-list text-left">
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li class="friends-active"><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li class="friends-active"><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li class="friends-active"><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+				</ul>
 		</div>
 	</div>
-	<div class="row social">
+</div>
+	<div class="container-fluid login">
+		<div class="col-md-2 col-md-offset-7">
+			<div class="login-text text-uppercase text-center pointer">login/register</div>
+		</div>
+	</div>
+	<div class="container-fluid social">
 		<ul class="col-xs -12 col-md-2 col-md-offset-6 social-list-group">
 			<li class="col-md-2 social-list"><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
 			<li class="col-md-2 social-list"><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
 			<li class="col-md-2 social-list"><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
 		</ul>
 	</div>
+<div class="container">
 	<div class="row main">
 		<div class="col-xs-12 col-md-7 main-left">
 			<div class="row tournament-wrapper">
@@ -170,5 +174,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="app.js"></script>
-</body>
 </html>
