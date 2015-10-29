@@ -2,9 +2,6 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	background: url(images/background.png) repeat;
 }
-.border-bottom{
-	box-shadow: 0 5px 0 #fff;
-}
 .margin-left{
 	margin-left: 15px;
 }
@@ -26,18 +23,18 @@ body{
 	border-top: 5px solid #e43f3f;
 }
 .login-text{
+	width: 140px;
 	height: 30px;
 	background: #fff;
-	margin: 65px 0;
+	margin-top: 65px;
 	font-weight: bold;
 	line-height: 2;
 }
 .friends{
 	background: #fff;
 	border-left: 1px solid #d8d8d8;
-	padding: 20px 0 10px 0;	
-	z-index: 100;
-	display: none;	
+	padding-top: 20px;	
+	z-index: 100;	
 }
 .friends-search-img{
 	width: 30px;
@@ -78,6 +75,18 @@ body{
 .friends-active img{
 	border: 2px solid #1182f5;
 	list-style-image: url(#);
+}
+.friends-list-buttons{
+	list-style: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.friends-list-buttons li{
+	display: inline-block;
+	margin-left: 10px; 
+}
+.friends-list-buttons li img{
+	width: 15px;
 }
 .social{
 	height: 50px;
@@ -143,6 +152,7 @@ li.social-list img{
 	margin: 20px 0 0 0; 
 }
 .game-name{
+	width: 197px;
 	font-size: 12px;
 	font-weight: 600;
 	padding: 3px;
@@ -156,14 +166,6 @@ li.social-list img{
 }
 .decoration-bar{
 	display: none;
-	width: 10px;
-	margin: 40px 0 0 15px;
-}
-.tournament-wrapper .decoration-bar{
-	background: #e43f3f;
-}
-.ladder-wrapper .decoration-bar{
-	background: #f4cb1e;
 }
 .match-header{
 	color: #fff;
@@ -179,7 +181,7 @@ li.social-list img{
 .match-wrapper{
 	background: #f4f4f4;
 	padding: 0;
-	margin: 0 0 0 15px;
+	margin: 5px 0 0 15px;
 	cursor: pointer;
 }
 .match-wrapper:hover{
@@ -210,26 +212,27 @@ li.social-list img{
 .match-winner img{
 	border: 2px solid #e43f3f;
 }
+.match-info-wrapper{
+	padding: 45px 0 0 0;
+	margin: 0 0 0 15px;
+	border-bottom: 1px solid #d8d8d8;
+}
 .match-info{
 	font-style: italic;
 	font-weight: lighter;
-	margin: 30px 0 5px 15px;
-	border-bottom: 1px solid #d8d8d8;
 	padding: 0 0 5px 0; 
 }
-.match-info img{
-	float: right;
+.match-info-img img{
 	width: 20px;
-	margin: 0 28px 0 0;
+	margin-left: -5px;
 }
 .match-show-more{
-	padding: 20px 0;
+	height: 20px;
+	padding-top: 15px;
+	padding-bottom: 50px; 
 	color: #363636;
 }
 @media screen and (min-width: 480px){
-	.match-info img{
-		margin: 0 53px 0 0;
-	}
 }
 @media screen and (min-width: 640px){
 	.match-info img{
@@ -248,6 +251,12 @@ li.social-list img{
 @media screen and (min-width: 768px){
 	.decoration-bar{
 		display: inline-block;
+		margin: 40px 0 0 0;
+		padding: 0;
+	}
+	.decoration-bar img{
+		height: 150px;
+		float: right;
 	}
 	.match-info img{	
 		margin: 0 105px 0 0;
@@ -271,20 +280,23 @@ li.social-list img{
 		margin: 10px 0 0 0;
 		font-size: 20px; 
 	}
+	.game-name{
+	width: 147px;
+	}
 }
 @media screen and (min-width: 990px){
-	.friends{
+	.friends-row{
 		position: absolute;
-		margin: 5px 0 0 8.3%;
+		width: 100%;
+	}
+	.friends{
+		margin-top: 5px;
 	}
 	#userSearch{
 		width: 100%;
 	}
 	.main-left h6 img{
 		width: 15px;
-	}
-	.decoration-bar{
-		margin: 35px 0 0 15px;
 	}
 	.social{
 		margin-top: 0;
@@ -301,22 +313,23 @@ li.social-list img{
 	.social-list:nth-child(3){
 		margin-left: 0;
 	}
+	.decoration-bar{
+		margin: 35px 0 0 0;
+	}
+	.border-bottom:hover{
+		box-shadow: 0 13px 0 #fff;
+	}
 }
 @media screen and (min-width: 1024px){
 	#navigation img{
 		height: 80%;
 		margin: 2px;
 	}
-	.friends{
-	}
 	.menu-height{
 		height: 30px;
 	}
 	.match-info{
 		font-size: 12px;
-	}
-	.match-info img{
-		margin: 0 15px 0 0;
 	}
 	.main-left h6{
 		font-size: 10px;
@@ -326,10 +339,10 @@ li.social-list img{
 	}
 	.main-right{
 		position: absolute;
-		margin: 0 0 0 0;
+		margin: 10px 0 0 0;
 	}
 	.login-text{
-		margin: 60px 0 0 0;
+		margin-top: 60px;
 	}
 	.social{
 		height: 30px;
@@ -338,7 +351,9 @@ li.social-list img{
 		width: 20px;
 	 	margin: 2px 0 0 0;
 	}
-
+	.border-bottom:hover{
+		box-shadow: 0 9px 0 #fff;
+	}
 }
 @media screen and (min-width: 1200px){
 	.game-image{
@@ -357,13 +372,16 @@ li.social-list img{
 	.game-hover-fee{
 		margin: 20px 0 0 0; 
 	}
+	.game-name{
+		width: 197px;
+	}
+	.decoration-bar img{
+		height: 200px;
+	}
 }
 @media screen and (min-width: 1280px){
 	.match-info{
 		font-size: 14px;
-	}
-	.match-info img{
-		margin: 0 25px 0 0;
 	}
 	.main-left h6{
 		font-size: 12px;
@@ -373,12 +391,6 @@ li.social-list img{
 		margin: 0 5px 0 3px;
 	}
 	.decoration-bar{
-		margin: 40px 0 0 15px;
+		margin: 40px 0 0 0;
 	}
-	.friends{
-		
-	}
-}
-@media screen and (min-width: 1360px){
-
 }
