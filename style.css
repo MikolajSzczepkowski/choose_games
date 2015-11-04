@@ -26,12 +26,14 @@ body{
 	border-top: 5px solid #e43f3f;
 }
 .login-text{
-	width: 140px;
+	width: 170px;
 	height: 30px;
 	background: #fff;
 	margin-top: 85px;
 	font-weight: bold;
 	line-height: 2;
+	margin-left: auto;
+	margin-right: auto;
 }
 .friends{
 	background: #fff;
@@ -143,6 +145,7 @@ li.social-list img{
 }
 .game-hover-players{
 	font-size: 12px;
+	font-weight: bold;
 	margin: 20px 0 0 0;
 }
 .game-hover-info{
@@ -300,6 +303,9 @@ li.social-list img{
 	}
 	.friends{
 		margin-top: 5px;
+	}
+	.friends-list{
+		height: auto;
 	}
 	#userSearch{
 		width: 100%;
