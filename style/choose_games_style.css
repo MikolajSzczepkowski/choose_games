@@ -1,3 +1,6 @@
+.main-inner-wrapper{
+	padding-bottom: 0;
+}
 .main-left h6{
 	font-weight: bold;
 }
@@ -160,6 +163,9 @@
 	}
 	.decoration-bar{
 		margin: 35px 0 0 0;
+	}
+	.main-right-wrapper{
+		border-left: 1px solid #d8d8d8;
 	}
 }
 @media screen and (min-width: 1024px){
