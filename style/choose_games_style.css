@@ -53,6 +53,14 @@
 .main-right{
 	padding: 0;
 }
+.main-right ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.main-right ul li{
+	display: none;
+}
 .match-header{
 	color: #fff;
 	font-weight: bold;
@@ -110,11 +118,15 @@
 	width: 20px;
 	margin-left: -5px;
 }
-.match-show-more{
+a.match-show-more{
 	height: 20px;
 	padding-top: 15px;
 	padding-bottom: 50px; 
 	color: #363636;
+	text-decoration: none;
+}
+a.match-show-more:hover{
+	color: #d8d8d8;
 }
 @media screen and (min-width: 640px){
 	.match-info img{
@@ -177,10 +189,6 @@
 	}
 	.main-left h6 img{
 		margin: 0 5px 0 3px;
-	}
-	.main-right{
-		margin: 10px 0 0 0;
-		padding: 0;
 	}
 }
 @media screen and (min-width: 1200px){
